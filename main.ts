@@ -1,3 +1,3 @@
-import { serve } from "https://deno.land/std@0.201.0/http/server.ts";
+import { serve } from "https://deno.land/std/http/server.ts";
 
-serve(() => new Response("Hello from Deno Deploy!"));
+serve(handler, { port: 8000 });
